@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Public library</title>
+</head>
+
+<body>
+    <div class="container">
+      <dialog>
+         <h2>Fill the Form</h2>
+        <form action="" id="form" >
+            <p>
+                <label for="title">Title:</label>
+                <input type="text" id="title"/>
+            </p>
+            <p>
+                <label for="author">Author:</label>
+                <input type="text" id="author"/>
+            </p>
+            <p>
+                <label for="pages">Pages:</label>
+                <input type="number" max="1000" min="1" id="pages"/>
+            </p>
+            <p>
+                <label for="status">Status</label>
+                <input type="text" name="" id="status">
+            </p>
+            <button id="submit">Add book</button>
+            <button id="close" autofocus>Close</button>
+        </form>
+        
+      </dialog>
+      <button id="dialogButton">Show Form</button>
+    </div>
+    <div id="library"></div>
+    <script src="/file.js"></script>
+</body>
+
+</html>
